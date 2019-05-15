@@ -11,7 +11,6 @@ import Footeraboutus from './component/footer';
 class App extends Component {
     render() {
         return(
-
             <React.Fragment>
                 <NavbarComponent/>
                 <HomeComponent/>

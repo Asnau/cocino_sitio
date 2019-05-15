@@ -6,6 +6,8 @@ import {
     Card
 } from 'react-bootstrap';
 
+import styles from './style/services-styles.css';
+
 
 export default class OurServices extends Component {
  render() {
@@ -20,7 +22,7 @@ export default class OurServices extends Component {
                 <Card.Img src="https://source.unsplash.com/random/240x240" alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
-                    <p>
+                    <p className='description'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                         erat a ante.
                     </p>
@@ -36,7 +38,7 @@ export default class OurServices extends Component {
                 <Card.Img src="https://source.unsplash.com/random/241x240" alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
-                    <p>
+                    <p className='description'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                         erat a ante.
                     </p>
@@ -52,7 +54,7 @@ export default class OurServices extends Component {
                 <Card.Img src="https://source.unsplash.com/random/240x241" alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
-                    <p>
+                    <p className='description'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                         erat a ante.
                     </p>
@@ -68,7 +70,7 @@ export default class OurServices extends Component {
                 <Card.Img src="https://source.unsplash.com/random/240x239" alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
-                    <p>
+                    <p className='description'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                         erat a ante.
                     </p>
