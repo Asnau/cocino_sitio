@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
+import $ from 'jquery';
 import NavbarComponent from './component/NavbarComponent';
 import HomeComponent from './component/HomeComponent';
 import AboutUs from './component/aboutus';
-import SecondComponent from './component/SecondComponent';
+import Feedback from './component/feedback';
 import OurServices from './component/services';
 import Gallery from './component/gallery';
 import Footeraboutus from './component/footer';
 
 
 class App extends Component {
+
+    /* onclick() {
+        $('html, body').animate({scrollTop: 0}, 1000);
+    } */
+
     render() {
         return(
             <React.Fragment>
@@ -16,9 +22,10 @@ class App extends Component {
                 <HomeComponent/>
                 <AboutUs/>
                 <OurServices/>
-                <SecondComponent/>
+                <Feedback/>
                 <Gallery/>
                 <Footeraboutus/>
+                
             </React.Fragment>
         );
     }

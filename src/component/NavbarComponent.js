@@ -15,7 +15,7 @@ import {
 } from 'react-router-dom';
 
 import HomeComponent from './HomeComponent';
-import SecondComponent from './SecondComponent';
+import Feedback from './feedback';
 import AboutUs from './aboutus';
 import OurServices from './services';
 

@@ -7,6 +7,9 @@ import {
 } from 'react-bootstrap';
 
 import styles from './style/services-styles.css';
+import house_party from '../images/houseParty1.png';
+import kitty_party from '../images/kitty-party.jpg';
+import event_planning from '../images/event-planning.jpg';
 
 
 export default class OurServices extends Component {
@@ -19,7 +22,7 @@ export default class OurServices extends Component {
 
             <CardDeck>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src="https://source.unsplash.com/random/240x240" alt=""/>
+                <Card.Img src={house_party} alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
@@ -35,7 +38,7 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src="https://source.unsplash.com/random/241x240" alt=""/>
+                <Card.Img src={kitty_party} alt="" roundedCircle/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
@@ -51,7 +54,7 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src="https://source.unsplash.com/random/240x241" alt=""/>
+                <Card.Img src={kitty_party} alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
@@ -67,7 +70,7 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src="https://source.unsplash.com/random/240x239" alt=""/>
+                <Card.Img src={event_planning} alt=""/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
