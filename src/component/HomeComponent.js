@@ -65,15 +65,15 @@ class HomeComponent extends Component {
                  <Container> 
                      <Col>      
                         <Row style={{marginBottom: '0px' }}>
-                            <h1 style={{color: '#c82535', margin: '5em auto 0 auto', }}>Garhwal Sarola Catering Services</h1>
+                            <h1 style={{ color: '#c82535', margin: '5em auto 0 auto', boxShadow : '10px 5px 25px #6f6fbd', backgroundColor: '#004085ba' }}>Garhwal Sarola Catering Services</h1>
                         </Row>
                         <Row style={{height:'20px', margin: '0 auto 10em auto' }}>
-                            <p style={{color: '#c82535', margin: 'auto', fontSize: 'xx-large'}} >Welcomes You</p>
+                            <p style={{color: '#c82535', margin: 'auto', fontSize: 'xx-large', boxShadow : '10px 5px 25px #6f6fbd', backgroundColor: '#004085ba'}} >Welcomes You</p>
                         </Row>
                     </Col>                   
                  </Container>
                  <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep12" viewBox="0 0 1600 200" style={{display: 'block'}} data-height="200">
-            <polygon class="" style={{fill: '#e9ecef'}} points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon>
+            <polygon class="" style={{fill: 'white'}} points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon>
             </svg>
                 </div>
                 {/* <Carousel ref='UniqueElementIdentifies' className="parallex" id="parallex-2">

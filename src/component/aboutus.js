@@ -11,7 +11,7 @@ class AboutUs extends Component {
     render() {
         return(
             
-            <Jumbotron >
+            <Jumbotron style={{backgroundColor: 'white'}}>
                 <Container id="aboutus">
                 <Row>
                 {/* style={{ background: 'blue' }} */ }

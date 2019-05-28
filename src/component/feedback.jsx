@@ -68,7 +68,7 @@ class Feedback extends Component {
         return(
             <React.Fragment>
                 
-                <Jumbotron fluid style={{height: 500, background: 'gray'}} id="secondcomponent">
+                <Jumbotron fluid style={{height: 500, background: '#38507d45'}} id="feedbackform">
                     <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>                    
                         <h1 style={{color: 'white', textDecorationColor: 'white'}}>feedback are always welcome</h1>
                     </Container>

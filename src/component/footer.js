@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import { Container, Row, Col, Card, CardBody, CardText, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardText, CardTitle, CardSubtitle, Button } from 'react-bootstrap';
 import Viewmap from './viewmap'
 import top from '../images/top.ico';
 
@@ -68,8 +68,8 @@ export default class Footeraboutus extends React.Component {
           <Row style={{height: '25px'}}/>
         </Container>
       </Container>
-        <Container fluid style={{background: '#c6c0f0 ', color: '#e6e6fa !important'}}>
-          <span className="text-muted" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>copyright to Ashish Nautiyal</span>
+        <Container fluid style={{background: '#004085d4 ', color: '#e6e6fa !important'}}>
+          <span style={{display: 'flex', justifyContent: 'center', color: 'white !important', alignItems: 'center'}}>copyright to Ashish Nautiyal</span>
         </Container>
        </footer>
       </React.Fragment>

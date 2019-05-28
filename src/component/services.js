@@ -15,14 +15,14 @@ import event_planning from '../images/event-planning.jpg';
 export default class OurServices extends Component {
  render() {
      return(
-        <Jumbotron fluid style={{background: 'gray'}} id="ourservices">
+        <Jumbotron fluid style={{backgroundColor: 'white', borderTop: '1px solid black'}} id="ourservices">
             <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>                    
-                <h1 style={{color: 'white', textDecoration: 'underline', textDecorationColor: 'white'}}>Our Services</h1>
+                <h1 style={{color: 'black', textDecoration: 'underline', textDecorationColor: 'black'}}>Our Services</h1>
             </Container>
 
             <CardDeck>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src={house_party} alt=""/>
+                <Card.Img src={house_party} alt="" style={{opacity: '0.5'}} />
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
@@ -38,7 +38,7 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src={kitty_party} alt="" roundedCircle/>
+                <Card.Img src={kitty_party} alt="" roundedCircle style={{opacity: '0.5'}}/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
@@ -54,10 +54,10 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src={kitty_party} alt=""/>
+                <Card.Img src={kitty_party} alt="" style={{opacity: '0.5'}}/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
-                    <p className='description'>
+                    <p className='description' style={{backgroundColor: 'grey'}}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                         erat a ante.
                     </p>
@@ -70,7 +70,7 @@ export default class OurServices extends Component {
                     </Card.ImgOverlay>
                 </Card>
                 <Card text="white" className="text-center p-3">
-                <Card.Img src={event_planning} alt=""/>
+                <Card.Img src={event_planning} alt="" style={{opacity: '0.5'}}/>
                 <Card.ImgOverlay>
                     <blockquote className="blockquote mb-0 card-body">
                     <p className='description'>
