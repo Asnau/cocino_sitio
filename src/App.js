@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import $ from 'jquery';
 import NavbarComponent from './component/NavbarComponent';
 import HomeComponent from './component/HomeComponent';
 import AboutUs from './component/aboutus';

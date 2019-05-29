@@ -6,6 +6,8 @@ import {
     Jumbotron
 } from 'react-bootstrap';
 
+import gallery1 from '../images/gallery-image1.jpg';
+
 class Gallery extends Component {
     render() {
         return(
@@ -17,7 +19,7 @@ class Gallery extends Component {
             <Container>
                 <CardColumns>
                     <Card>
-                        <Card.Img variant="top" src="https://source.unsplash.com/random/240x240" />
+                        <Card.Img variant="top" src={gallery1} />
                         <Card.Body>
                         <Card.Title>Card title that wraps to a new line</Card.Title>
                         <Card.Text>

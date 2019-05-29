@@ -7,6 +7,8 @@ import {
     Image
 } from 'react-bootstrap';
 
+import photo from '../images/photo.jpg';
+
 class AboutUs extends Component {
     render() {
         return(
@@ -16,11 +18,15 @@ class AboutUs extends Component {
                 <Row>
                 {/* style={{ background: 'blue' }} */ }
                     <Col sm={6} md={4}>
-                        <Image src='https://source.unsplash.com/random/400x400' thumbnail/>
+                        <Image src={photo} thumbnail/>
                     </Col>
                     <Col sm={6} md={8}>
                         <h1>About Us</h1>
-                        <p style={{}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac augue ac massa sollicitudin auctor ac ac lacus. Donec id dolor vitae nibh finibus aliquet. Curabitur magna sapien, dapibus et consectetur quis, tempor nec sem. Curabitur interdum blandit urna, quis porta odio viverra a. Nulla tristique suscipit turpis, sed lacinia tortor.</p>
+                        <p style={{}}>My name is Ram Dayal Nautiyal, I have an experience of more than 30 years in various hotel and catering businesses. 
+                        My current business is derived from our traditional work which is "Sarola", which means cook in Garhwali. 
+                        We were designated the task of cooking food on auspicious occasions since 1200 A.D. as per our lineage. 
+                        We arrange food with full hygiene in all auspicious occasions along with modern parties.
+                        </p>
                     </Col>
                 </Row>
                 </Container>

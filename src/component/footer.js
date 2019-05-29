@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import { Container, Row, Col, Card, CardBody, CardText, CardTitle, CardSubtitle, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import Viewmap from './viewmap'
 import top from '../images/top.ico';
 
@@ -39,7 +39,7 @@ export default class Footeraboutus extends React.Component {
     return (
       <React.Fragment>
        <footer style={{background: "#778899"}} id="contact">
-       <img src={top} onClick={this.onclick} style={styles} >
+       <img src={top} onClick={this.onclick} style={styles} alt="">
                       {/* <img style={{display: 'inline-block', marginRight: '10px'}}/> */} 
       </img>
        <Container fluid style={{background: 'white'}}>

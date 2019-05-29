@@ -1,23 +1,8 @@
 import React, {Component} from 'react';
 import {
     Nav,
-    NavDropdown,
     Navbar
     } from 'react-bootstrap';
-    
-import {
-    HashRouter,
-    Route,
-    Switch,
-    NavLink,
-    Link,
-    BrowserRouter
-} from 'react-router-dom';
-
-import HomeComponent from './HomeComponent';
-import Feedback from './feedback';
-import AboutUs from './aboutus';
-import OurServices from './services';
 
 class NavbarComponent extends Component {
     render() {

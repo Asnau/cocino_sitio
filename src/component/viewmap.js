@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 import {
-    Modal,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
     Figure
 } from 'react-bootstrap';
 
