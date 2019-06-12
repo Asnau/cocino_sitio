@@ -1,7 +1,9 @@
+/*jshint esversion: 6 */
+
 import React from 'react';
 import $ from 'jquery';
 import { Container, Row, Col} from 'react-bootstrap';
-import Viewmap from './viewmap'
+import Viewmap from './viewmap';
 import top from '../images/top.ico';
 
 
@@ -11,12 +13,25 @@ export default class Footeraboutus extends React.Component {
         this.mapState = false;
         this.state = { activeIndex: 0 };
         this.mapStates = this.mapStates.bind(this);
+        this.animateCopyright = this.animateCopyright.bind(this);
     }
 
     mapStates(state) {
         this.setState({
             mapState: !this.state.mapState
-        })
+        });
+    }
+
+    animateCopyright() {
+      var element = document.getElementById('animate_copyright');
+      var textNode = element.childNodes[0]; // assuming no other children
+      var text = textNode.data;
+  
+      window.onload = setInterval(function () 
+      {
+      text = text[text.length - 1] + text.substring(0, text.length - 1);
+        textNode.data = text;
+      }, 100);
     }
   
   render() {
@@ -34,14 +49,14 @@ export default class Footeraboutus extends React.Component {
       padding: '15px',
       borderRadius: '4px',
       height: '8vh'
-    }
+    };
 
     return (
       <React.Fragment>
        <footer style={{background: "#778899"}} id="contact">
-       <img src={top} onClick={this.onclick} style={styles} alt="">
+       <img src={top} onClick={this.onclick} style={styles} alt=""/>
                       {/* <img style={{display: 'inline-block', marginRight: '10px'}}/> */} 
-      </img>
+      
        <Container fluid style={{background: 'white'}}>
         <Container>
           <Row style={{height: '25px'}}/>
@@ -59,8 +74,8 @@ export default class Footeraboutus extends React.Component {
             <Col xs='12' sm='4' md='4' lg='4'>
               <h2 style={{color: '#191919', textDecoration: 'underline', textDecorationColor: 'black'}}>Reservation</h2>
               
-                  <p>Phone: +91 75059 47871</p>
-                  <p>Email: ramdayal.nautiyal@gmail.com</p>
+                  <p>Phone: <a href="tel:+917505947871">+91 75059 47871</a></p>
+                  <p>Email: <a href="mailto:ramdayal.natuiyal@gmail.com">ramdayal.nautiyal@gmail.com</a></p>
               
             </Col>
               
@@ -69,7 +84,7 @@ export default class Footeraboutus extends React.Component {
         </Container>
       </Container>
         <Container fluid style={{background: '#004085d4 ', color: '#e6e6fa !important'}}>
-          <span style={{display: 'flex', justifyContent: 'center', color: 'white !important', alignItems: 'center'}}>copyright to Ashish Nautiyal</span>
+          <span className="animate_copyright" style={{display: 'flex', justifyContent: 'center', color: 'white !important', alignItems: 'center'}} animateCopyright = {this.animateCopyright}>copyright to Ashish Nautiyal</span>
         </Container>
        </footer>
       </React.Fragment>
@@ -78,4 +93,5 @@ export default class Footeraboutus extends React.Component {
   onclick() {
     $("html, body").animate({ scrollTop: 0 }, 1000);
   }
+  
 }
