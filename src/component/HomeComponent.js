@@ -67,9 +67,9 @@ class HomeComponent extends Component {
                         </Row>
                     </Col>                   
                  </Container>
-                 <svg id="" preserveAspectRatio="xMidYMax meet" className="svg-separator sep12" viewBox="0 0 1600 200" style={{display: 'block'}} data-height="200">
+                 {/* <svg id="" preserveAspectRatio="xMidYMax meet" className="svg-separator sep12" viewBox="0 0 1600 200" style={{display: 'block'}} data-height="200">
             <polygon className="" style={{fill: 'white'}} points="-4,24 800,198 1604,24 1604,204 -4,204 "></polygon>
-            </svg>
+            </svg> */}
                 </div>
                 {/* <Carousel ref='UniqueElementIdentifies' className="parallex" id="parallex-2">
                     <Carousel.Item>

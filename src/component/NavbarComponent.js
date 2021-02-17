@@ -4,9 +4,9 @@ import {
     Navbar
     } from 'react-bootstrap';
 
-class NavbarComponent extends Component {
-    render() {
-        return(
+export default function NavbarComponent() {
+
+    return(
             <React.Fragment>
                 <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" style={{backgroundColor: '#004085d4'}}>
                 <Navbar.Brand href="#home">
@@ -29,7 +29,4 @@ class NavbarComponent extends Component {
                 
             </React.Fragment>
         );
-    }
 }
-
-export default NavbarComponent;

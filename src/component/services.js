@@ -12,8 +12,7 @@ import event_caterers from '../images/event-caterers.jpg';
 import event_planning from '../images/event-planning.jpg';
 
 
-export default class OurServices extends Component {
- render() {
+export default function OurServices() {
      return(
         <Jumbotron fluid style={{backgroundColor: 'white', borderTop: '1px solid black'}} id="ourservices">
             <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>                    
@@ -73,5 +72,4 @@ export default class OurServices extends Component {
             </CardDeck>
         </Jumbotron>
      );
- }
 }

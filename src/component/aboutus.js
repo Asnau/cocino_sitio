@@ -9,8 +9,7 @@ import {
 
 import photo from '../images/photo.jpg';
 
-class AboutUs extends Component {
-    render() {
+export default function AboutUs() {
         return(
             
             <Jumbotron style={{backgroundColor: 'white'}}>
@@ -22,10 +21,7 @@ class AboutUs extends Component {
                     </Col>
                     <Col sm={6} md={8}>
                         <h1>About Us</h1>
-                        <p style={{}}>My name is Ram Dayal Nautiyal, I have an experience of more than 30 years in various hotel and catering businesses. 
-                        My current business is derived from our traditional work which is "Sarola", which means cook in Garhwali. 
-                        We were designated the task of cooking food on auspicious occasions since 1200 A.D. as per our lineage. 
-                        We arrange food with full hygiene in all auspicious occasions along with modern parties.
+                        <p style={{}}>नमस्कार! मेरा नाम राम दयाल नौटियाल है, मुझे विभिन्न होटलों और खानपान व्यवसायों में 30 से अधिक वर्षों का अनुभव है। मेरा वर्तमान व्यवसाय हमारे पारंपरिक काम "सरोला" से लिया गया है, जिसका अर्थ है गढ़वाली में खाना बनाना। हमें अपने वंश के अनुसार 1200 A.D. के बाद से शुभ अवसरों पर भोजन पकाने का काम सौंपा गया था। हम आधुनिक दलों के साथ सभी शुभ अवसरों में पूर्ण स्वच्छता के साथ भोजन की व्यवस्था करते हैं।
                         </p>
                     </Col>
                 </Row>
@@ -33,7 +29,4 @@ class AboutUs extends Component {
             </Jumbotron>
             
         );
-    }
 }
-
-export default AboutUs;

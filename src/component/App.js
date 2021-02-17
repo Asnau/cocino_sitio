@@ -9,12 +9,12 @@ import OurServices from './component/services';
 import Gallery from './component/gallery';
 import Footeraboutus from './component/footer';
 
-
+/* 
 class App extends Component {
 
     /* onclick() {
         $('html, body').animate({scrollTop: 0}, 1000);
-    } */
+    } 
 
     render() {
         return(
@@ -32,4 +32,19 @@ class App extends Component {
     }
 }
 
-export default App;
+export default App; */
+
+
+export default function App() {
+    return(
+        <React.Fragment>
+            <NavbarComponent/>
+            <HomeComponent/>
+            <AboutUs/>
+            <OurServices/>
+            <Feedback/>
+            <Gallery/>
+            <Footeraboutus/>  
+        </React.Fragment>
+    );
+}
